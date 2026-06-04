@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "OMEGA — Аренда яхты"
+version = "1.0.0"
+id = "artifacts/omega-yacht"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22003
+
+[services.development]
+run = "pnpm --filter @workspace/omega-yacht run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/omega-yacht", "run", "build" ]
+publicDir = "artifacts/omega-yacht/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22003"
+BASE_PATH = "/"
