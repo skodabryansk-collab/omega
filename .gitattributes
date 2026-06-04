@@ -1,0 +1,9 @@
+public/hero.mp4 filter=lfs diff=lfs merge=lfs -text
+public/images/gallery-coast.png filter=lfs diff=lfs merge=lfs -text
+public/images/gallery-deck.png filter=lfs diff=lfs merge=lfs -text
+public/images/gallery-detail.png filter=lfs diff=lfs merge=lfs -text
+public/images/gallery-guests.png filter=lfs diff=lfs merge=lfs -text
+public/images/gallery-interior.png filter=lfs diff=lfs merge=lfs -text
+public/images/gallery-sunset.png filter=lfs diff=lfs merge=lfs -text
+public/images/gallery-wide.png filter=lfs diff=lfs merge=lfs -text
+public/images/hero-bg.png filter=lfs diff=lfs merge=lfs -text
